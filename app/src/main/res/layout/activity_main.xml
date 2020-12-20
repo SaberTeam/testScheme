@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/button_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转小费"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/button_refund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转退款"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_tips" />
+    <Button
+        android:id="@+id/button_transaction_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转交易详情"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_refund" />
+    <Button
+        android:id="@+id/button_transaction_refund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳转交易退款"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_transaction_detail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
